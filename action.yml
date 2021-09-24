@@ -1,0 +1,39 @@
+name: 'Statick'
+author: 'NIWC PAC'
+description: 'Run Statick'
+branding:
+  icon: 'zap'
+  color: 'yellow'
+inputs:
+  check:
+    description: "Fail on any statick warning"
+    required: false
+    default: true
+  config:
+    description: "Configuration"
+    required: false
+    default: config.yaml
+  log_level:
+    description: "Log verbosity level"
+    required: false
+    default: INFO
+  output_path:
+    description: "Path to store output logs"
+    required: false
+    default: /tmp/statick_output
+  package_path:
+    description: "Path to search for files"
+    required: false
+    default: .
+  profile:
+    description: "Profile configuration"
+    required: false
+    default: profile.yaml
+  user_paths:
+    description: "Paths (comma delimited) for user-defined configuration"
+    required: false
+    default:
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

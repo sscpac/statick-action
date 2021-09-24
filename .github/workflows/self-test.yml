@@ -1,0 +1,29 @@
+---
+name: Self-Test
+
+on: # NOLINT
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Statick
+        uses: gregtkogut/statick-action@action-implementation
+        with:
+          profile: self_check.yaml
+      - name: Statick Markdown
+        uses: gregtkogut/statick-action@action-implementation
+        with:
+          config: md-config.yaml
+          profile: md-profile.yaml
+      - name: Statick Tooling
+        uses: gregtkogut/statick-action@action-implementation
+        with:
+          config: tooling-config.yaml
+          profile: tooling-profile.yaml
+          user_paths: .github/workflows
