@@ -42,7 +42,7 @@ Where to look for user-provided statick configuration. Default: empty string.
 
 ## Example usage
 
-The minimal use of `statick-action`, presuming some code is present workflow workspace is:
+The minimal use of `statick-action`, presuming some code is present in the workflow workspace is:
 
 ```shell
 uses: actions/statick-action
