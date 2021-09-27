@@ -34,7 +34,7 @@ Where statick should look for files to perform static analysis on. Default: `.`
 
 ## `profile`
 
-The statick config file to use. Default: `profile.yaml`.
+The statick profile file to use. Default: `profile.yaml`.
 
 ## `user_paths`
 
