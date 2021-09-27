@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 USER root
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends && apt-get clean \
     build-essential \
     cccc \
     chktex \
@@ -86,8 +86,7 @@ RUN python3 -m pip install --upgrade \
 # Have to install newer version from non-apt source due to SSL library compatibility issues.
 RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
-RUN apt-get update && apt-get install -y --no-install-recommends nodejs
-RUN apt-get clean
+RUN apt-get update && apt-get install -y --no-install-recommends nodejs && apt-get clean
 RUN npm config set prefix -g /usr
 RUN npm install -g \
     dockerfilelint \
