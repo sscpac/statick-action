@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 USER root
 
-RUN apt-get update && apt-get install -y --no-install-recommends && apt-get clean \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     cccc \
     chktex \
@@ -44,7 +44,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends && apt-get clea
     python3-yapsy \
     shellcheck \
     uncrustify \
-    wget
+    wget \
+    && apt-get clean
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade \
     bandit \
