@@ -211,4 +211,3 @@ line_rules:
   ONBUILD:
     paramSyntaxRegex: /.+/
     rules: []
-required_instructions:
