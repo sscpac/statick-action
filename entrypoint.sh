@@ -15,6 +15,7 @@ if [ -n "$INPUT_CHECK" ]; then
   if [ "$INPUT_CHECK" = "true" ]; then
     STATICK_ARGS+=" --check"
   fi
+fi
 
 if [ -n "$INPUT_CONFIG" ]; then
   STATICK_ARGS+=" --config $INPUT_CONFIG"

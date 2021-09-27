@@ -153,9 +153,9 @@ line_rules:
           - "_clear_packaging_caches_and_temporary_package_downloads"
       -
         label: "no_apt-get_clean"
-        regex: /apt-get install(?!.+clean)/g
+        regex: /apt-get install(?!.+rm .*\/var\/lib\/apt\/lists\/\*)/g
         level: "info"
-        message: "apt-get clean is not used"
+        message: "the apt cache is not cleaned"
         description: "the apt-get cache will remain in this layer making the layer unnecessarily large"
         reference_url:
           - "http://docs.projectatomic.io/container-best-practices/#"
