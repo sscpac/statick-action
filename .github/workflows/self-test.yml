@@ -12,15 +12,18 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+
       - name: Statick
         uses: gregtkogut/statick-action@action-implementation
         with:
           profile: self_check.yaml
+
       - name: Statick Markdown
         uses: gregtkogut/statick-action@action-implementation
         with:
           config: md-config.yaml
           profile: md-profile.yaml
+
       - name: Statick Tooling
         uses: gregtkogut/statick-action@action-implementation
         with:
