@@ -5,7 +5,7 @@
 This is a **GitHub Action** that runs the **[statick](https://github.com/sscpac/statick)** static code analysis tool.
 
 The action inputs mirror the command line arguments for the CLI version of
-statick, and much more detail about the powerful statick configuration options is
+Statick, and much more detail about the powerful Statick configuration options is
 available in the README of the above repository.
 
 ## Inputs
