@@ -15,6 +15,9 @@ if [ -n "$INPUT_CHECK" ]; then
   if [ "$INPUT_CHECK" = "true" ]; then
     STATICK_ARGS+=" --check"
   fi
+# default to true if no value provided
+else
+  STATICK_ARGS+=" --check"
 fi
 
 if [ -n "$INPUT_CONFIG" ]; then
