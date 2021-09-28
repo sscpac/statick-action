@@ -22,7 +22,7 @@ The Statick config file to use. Default: `config.yaml`.
 
 ## `log_level`
 
-The statick log level to use. Default: `INFO`.
+The Statick log level to use. Default: `INFO`.
 
 ## `output_path`
 
