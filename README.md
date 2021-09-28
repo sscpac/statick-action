@@ -2,7 +2,7 @@
 
 ![Self Test](https://github.com/gregtkogut/statick-action/workflows/Self-Test/badge.svg?branch=action-experimentation)
 
-This is a **GitHub Action** that runs the **[statick](https://github.com/sscpac/statick)** static code analysis tool.
+This is a **GitHub Action** that runs the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
 
 The action inputs mirror the command line arguments for the CLI version of
 Statick, and much more detail about the powerful Statick configuration options is
