@@ -30,7 +30,7 @@ Where to write Statick logs. Default: `/tmp/statick_output`.
 
 ## `package_path`
 
-Where statick should look for files to perform static analysis on. Default: `.`
+Where Statick should look for files to perform static analysis on. Default: `.`
 
 ## `profile`
 
