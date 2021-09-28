@@ -38,7 +38,7 @@ The Statick profile file to use. Default: `profile.yaml`.
 
 ## `user_paths`
 
-Where to look for user-provided statick configuration. Default: empty string.
+Where to look for user-provided Statick configuration. Default: empty string.
 
 ## Example usage
 
