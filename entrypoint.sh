@@ -43,6 +43,6 @@ statick $STATICK_ARGS
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  echo "Error(s) found by statick, or statick did not run successfully"
+  echo "Error(s) found by Statick, or Statick did not run successfully"
   exit $exit_code
 fi
