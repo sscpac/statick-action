@@ -18,7 +18,7 @@ Setting this input to `false` may be useful to allow the workflow to work throug
 
 ## `config`
 
-The statick config file to use. Default: `config.yaml`.
+The Statick config file to use. Default: `config.yaml`.
 
 ## `log_level`
 
