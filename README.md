@@ -12,7 +12,7 @@ available in the README of the above repository.
 
 ## `check`
 
-Any discovered statick issue fails the action. Default `true`.
+Any discovered Statick issue fails the action. Default `true`.
 
 Setting this input to `false` may be useful to allow the workflow to work through all steps while debugging.
 
