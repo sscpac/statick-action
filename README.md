@@ -26,7 +26,7 @@ The statick log level to use. Default: `INFO`.
 
 ## `output_path`
 
-Where to write statick logs. Default: `/tmp/statick_output`.
+Where to write Statick logs. Default: `/tmp/statick_output`.
 
 ## `package_path`
 
