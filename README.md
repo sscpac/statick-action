@@ -10,33 +10,33 @@ available in the README of the above repository.
 
 ## Inputs
 
-## `check`
+### `check`
 
 Any discovered Statick issue fails the action. Default `true`.
 
 Setting this input to `false` may be useful to allow the workflow to work through all steps while debugging.
 
-## `config`
+### `config`
 
 The Statick config file to use. Default: `config.yaml`.
 
-## `log_level`
+### `log_level`
 
 The Statick log level to use. Default: `INFO`.
 
-## `output_path`
+### `output_path`
 
 Where to write Statick logs. Default: `/tmp/statick_output`.
 
-## `package_path`
+### `package_path`
 
 Where Statick should look for files to perform static analysis on. Default: `.`
 
-## `profile`
+### `profile`
 
 The Statick profile file to use. Default: `profile.yaml`.
 
-## `user_paths`
+### `user_paths`
 
 Where to look for user-provided Statick configuration. Default: empty string.
 
