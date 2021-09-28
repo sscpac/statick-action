@@ -45,7 +45,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     shellcheck \
     uncrustify \
     wget \
-    && apt-get clean
+    && rm -rf /var/lib/apt/lists/*
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --upgrade \
     bandit \
@@ -87,7 +87,7 @@ RUN python3 -m pip install --upgrade \
 # Have to install newer version from non-apt source due to SSL library compatibility issues.
 RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
-RUN apt-get update && apt-get install -y --no-install-recommends nodejs && apt-get clean
+RUN apt-get update && apt-get install -y --no-install-recommends nodejs && rm -rf /var/lib/apt/lists/*
 RUN npm config set prefix -g /usr
 RUN npm install -g \
     dockerfilelint \
