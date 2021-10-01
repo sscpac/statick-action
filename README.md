@@ -50,5 +50,5 @@ uses: actions/statick-action
 
 More advanced usage, including use of specific profiles, configurations,
 and user-specified resources can be viewed in the
-[self-test workflow](https://github.com/gregtkogut/statick-action/blob/action-experimentation/.github/workflows/self-test.yml)
+[self-test workflow](https://github.com/gregtkogut/statick-action/blob/action-implementation/.github/workflows/self-test.yml)
 in this repository.
