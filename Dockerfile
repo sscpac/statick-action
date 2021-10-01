@@ -103,5 +103,12 @@ RUN npm install -g \
     stylelint \
     stylelint-config-standard
 
+# Install Hadolint binary
+RUN mkdir hadolint-bin && \
+    curl -sL -o hadolint https://github.com/hadolint/hadolint/releases/download/v2.6.0/hadolint-$(uname -s)-$(uname -m) && \
+    chmod +x hadolint && \
+    mv hadolint hadolint-bin/.
+ENV PATH $PWD/hadolint-bin:$PATH
+
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
