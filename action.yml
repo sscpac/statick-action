@@ -6,7 +6,7 @@ branding:
   color: 'yellow'
 inputs:
   check:
-    description: "Fail on any statick warning"
+    description: "Fail on any Statick warning"
     required: false
     default: true
   config:
