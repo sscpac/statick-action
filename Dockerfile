@@ -8,8 +8,8 @@ LABEL "maintainer"="Thomas Denewiler <tdenewiler@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-USER root
-
+# Version pinning may be added in the future, but ignore for now.
+# hadolint ignore=DL3008
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     cccc \
@@ -46,8 +46,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     uncrustify \
     wget \
     && rm -rf /var/lib/apt/lists/*
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --upgrade \
+# Version pinning may be added in the future, but ignore for now.
+# hadolint ignore=DL3013
+RUN python3 -m pip install --no-cache-dir --upgrade pip
+# hadolint ignore=DL3013
+RUN python3 -m pip install --no-cache-dir --upgrade \
     bandit \
     black \
     cmakelint \
@@ -84,12 +87,15 @@ RUN python3 -m pip install --upgrade \
     yapsy
 
 # Statick npm tools.
-# Have to install newer version from non-apt source due to SSL library compatibility issues.
-RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
-RUN bash nodesource_setup.sh
-RUN apt-get update && apt-get install -y --no-install-recommends nodejs && rm -rf /var/lib/apt/lists/*
-RUN npm config set prefix -g /usr
-RUN npm install -g \
+# Newer version is installed from non-apt source due to SSL library compatibility issues.
+
+# Version pinning may be added in the future, but ignore for now.
+# hadolint ignore=DL3008,DL3016
+RUN curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh && \
+    bash nodesource_setup.sh && \
+    apt-get update && apt-get install -y --no-install-recommends nodejs && rm -rf /var/lib/apt/lists/* && \
+    npm config set prefix -g /usr && \
+    npm install -g \
     dockerfilelint \
     dockerfile_lint \
     prettier \
@@ -105,7 +111,7 @@ RUN npm install -g \
 
 # Install Hadolint binary
 RUN mkdir hadolint-bin && \
-    curl -sL -o hadolint https://github.com/hadolint/hadolint/releases/download/v2.6.0/hadolint-$(uname -s)-$(uname -m) && \
+    curl -sL -o hadolint "https://github.com/hadolint/hadolint/releases/download/v2.6.0/hadolint-$(uname -s)-$(uname -m)" && \
     chmod +x hadolint && \
     mv hadolint hadolint-bin/.
 ENV PATH $PWD/hadolint-bin:$PATH
