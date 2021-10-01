@@ -1,5 +1,5 @@
 ---
-name: Self-Test
+name: Statick
 
 on: # NOLINT
   pull_request:
@@ -14,18 +14,18 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Statick
-        uses: gregtkogut/statick-action@action-implementation
+        uses: sscpac/statick-action
         with:
           profile: self_check.yaml
 
       - name: Statick Markdown
-        uses: gregtkogut/statick-action@action-implementation
+        uses: sscpac/statick-action
         with:
           config: md-config.yaml
           profile: md-profile.yaml
 
       - name: Statick Tooling
-        uses: gregtkogut/statick-action@action-implementation
+        uses: sscpac/statick-action
         with:
           config: tooling-config.yaml
           profile: tooling-profile.yaml

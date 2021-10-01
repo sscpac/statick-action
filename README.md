@@ -1,6 +1,6 @@
 # statick-action
 
-![Self Test](https://github.com/gregtkogut/statick-action/workflows/Self-Test/badge.svg?branch=action-implemenation)
+![Statick](https://github.com/sscpac/statick-action/workflows/Statick/badge.svg)
 
 This is a **GitHub Action** that runs the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
 
@@ -50,5 +50,5 @@ uses: actions/statick-action
 
 More advanced usage, including use of specific profiles, configurations,
 and user-specified resources can be viewed in the
-[self-test workflow](https://github.com/gregtkogut/statick-action/blob/action-implementation/.github/workflows/self-test.yml)
+[self-test workflow](https://github.com/sscpac/statick-action/.github/workflows/self-test.yml)
 in this repository.
