@@ -14,18 +14,18 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Statick
-        uses: sscpac/statick-action
+        uses: sscpac/statick-action@main
         with:
           profile: self_check.yaml
 
       - name: Statick Markdown
-        uses: sscpac/statick-action
+        uses: sscpac/statick-action@main
         with:
           config: md-config.yaml
           profile: md-profile.yaml
 
       - name: Statick Tooling
-        uses: sscpac/statick-action
+        uses: sscpac/statick-action@main
         with:
           config: tooling-config.yaml
           profile: tooling-profile.yaml
