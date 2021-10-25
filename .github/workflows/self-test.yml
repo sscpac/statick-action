@@ -25,7 +25,8 @@ jobs:
           profile: md-profile.yaml
 
       - name: Statick Tooling
-        uses: sscpac/statick-action@main
+        #uses: sscpac/statick-action@main
+        uses: gregtkogut/statick-action@use_published_docker_image
         with:
           config: tooling-config.yaml
           profile: tooling-profile.yaml
