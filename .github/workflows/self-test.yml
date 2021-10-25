@@ -20,6 +20,7 @@ jobs:
 
       - name: Statick Markdown
         uses: gregtkogut/statick-action@use_published_docker_image
+        with:
           config: md-config.yaml
           profile: md-profile.yaml
 
