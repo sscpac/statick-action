@@ -7,4 +7,4 @@ LABEL "homepage"="https://github.com/sscpac/statick-action"
 LABEL "maintainer"="Thomas Denewiler <tdenewiler@gmail.com>"
 
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"
+ENTRYPOINT ["/entrypoint.sh"]
