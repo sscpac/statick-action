@@ -8,4 +8,3 @@ LABEL "maintainer"="Thomas Denewiler <tdenewiler@gmail.com>"
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-
