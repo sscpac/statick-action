@@ -14,18 +14,18 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Statick
-        uses: gregtkogut/statick-action@use_published_docker_image
+        uses: sscpac/statick-action@main
         with:
           profile: self_check.yaml
 
       - name: Statick Markdown
-        uses: gregtkogut/statick-action@use_published_docker_image
+        uses: sscpac/statick-action@main
         with:
           config: md-config.yaml
           profile: md-profile.yaml
 
       - name: Statick Tooling
-        uses: gregtkogut/statick-action@use_published_docker_image
+        uses: sscpac/statick-action@main
         with:
           config: tooling-config.yaml
           profile: tooling-profile.yaml
