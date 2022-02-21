@@ -2,7 +2,10 @@
 
 ![Statick](https://github.com/sscpac/statick-action/workflows/Statick/badge.svg)
 
-This is a **GitHub Action** that runs the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
+Improve your code quality by running dozens of the most popular and effective static code analysis tools at once from one simple action.
+The supported tools cover many popular programming, scripting, and documentation languages.
+
+This **GitHub Action** uses the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
 
 The action inputs mirror the command line arguments for the CLI version of
 Statick, and much more detail about the powerful Statick configuration options is
