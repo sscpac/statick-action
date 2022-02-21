@@ -2,7 +2,8 @@
 
 ![Statick](https://github.com/sscpac/statick-action/workflows/Statick/badge.svg)
 
-Improve your code quality by running dozens of the most popular and effective static code analysis tools at once from one simple action.
+Improve your code quality by running dozens of the most popular and effective static code analysis
+tools at once from one simple action.
 The supported tools cover many popular programming, scripting, and documentation languages.
 
 This **GitHub Action** uses the **[Statick](https://github.com/sscpac/statick)** static code analysis tool.
