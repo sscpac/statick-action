@@ -40,6 +40,10 @@ Where Statick should look for files to perform static analysis on. Default: `.`
 
 The Statick profile file to use. Default: `profile.yaml`.
 
+### `timings`
+
+Output timing information to stdout. Default `false`.
+
 ### `user_paths`
 
 Where to look for user-provided Statick configuration. Default: empty string.

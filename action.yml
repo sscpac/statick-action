@@ -13,6 +13,10 @@ inputs:
     description: "Configuration"
     required: false
     default: config.yaml
+  level:
+    description: "Scan level to use.  Overrides levels specified by the profile."
+    required: false
+    default:
   log_level:
     description: "Log verbosity level"
     required: false

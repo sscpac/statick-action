@@ -21,6 +21,10 @@ if [ -n "$INPUT_CONFIG" ]; then
   STATICK_ARGS+=" --config $INPUT_CONFIG"
 fi
 
+if [ -n "$INPUT_LEVEL" ]; then
+  STATICK_ARGS+=" --level $INPUT_LEVEL"
+fi
+
 if [ -n "$INPUT_LOG_LEVEL" ]; then
   STATICK_ARGS+=" --log $INPUT_LOG_LEVEL"
 fi
