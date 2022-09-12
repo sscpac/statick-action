@@ -33,6 +33,12 @@ if [ -n "$INPUT_PROFILE" ]; then
   STATICK_ARGS+=" --profile $INPUT_PROFILE"
 fi
 
+if [ -n "$INPUT_TIMINGS" ]; then
+  if [ "$INPUT_TIMINGS" = "true" ]; then
+    STATICK_ARGS+=" --timings"
+  fi
+fi
+
 if [ -n "$INPUT_USER_PATHS" ]; then
   STATICK_ARGS+=" --user-paths $INPUT_USER_PATHS"
 fi
