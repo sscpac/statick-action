@@ -14,19 +14,19 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Statick
-        uses: sscpac/statick-action@add-timings-information
+        uses: gregtkogut/statick-action@add-timings-information
         with:
           profile: self_check.yaml
           timings: true
 
       - name: Statick Markdown
-        uses: sscpac/statick-action@add-timings-information
+        uses: gregtkogut/statick-action@add-timings-information
         with:
           config: md-config.yaml
           profile: md-profile.yaml
 
       - name: Statick Tooling
-        uses: sscpac/statick-action@add-timings-information
+        uses: gregtkogut/statick-action@add-timings-information
         with:
           config: tooling-config.yaml
           profile: tooling-profile.yaml
