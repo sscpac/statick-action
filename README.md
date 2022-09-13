@@ -44,6 +44,10 @@ The Statick profile file to use. Default: `profile.yaml`.
 
 Output timing information to stdout. Default `false`.
 
+### `level`
+
+Scan all packages using this level. Overrides all levels set from the profile.
+
 ### `user_paths`
 
 Where to look for user-provided Statick configuration. Default: empty string.
