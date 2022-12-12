@@ -1,7 +1,7 @@
-FROM ghcr.io/sscpac/statick:0.7.2
+FROM ghcr.io/sscpac/statick:0.9.1
 
 LABEL "name"="Statick Action"
-LABEL "version"="0.7.2"
+LABEL "version"="0.9.1"
 LABEL "repository"="https://github.com/sscpac/statick-action.git"
 LABEL "homepage"="https://github.com/sscpac/statick-action"
 LABEL "maintainer"="Thomas Denewiler <tdenewiler@gmail.com>"
