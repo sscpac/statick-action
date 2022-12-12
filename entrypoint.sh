@@ -47,6 +47,7 @@ if [ -n "$INPUT_USER_PATHS" ]; then
   STATICK_ARGS+=" --user-paths $INPUT_USER_PATHS"
 fi
 
+. /opt/venv/bin/activate
 # shellcheck disable=SC2086
 statick $STATICK_ARGS
 
